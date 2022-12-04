@@ -5,13 +5,18 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLliner", "TLliner\TLliner.csproj", "{7E745D3F-59BE-42EA-A435-9E83FBA0330A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLiner.Domain", "TLiner.Domain\TLiner.Domain.csproj", "{306ED2A3-642E-4D22-A5F9-8BF701C668C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLiner.Domain", "TLiner.Domain\TLiner.Domain.csproj", "{306ED2A3-642E-4D22-A5F9-8BF701C668C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLiner.Data", "TLiner.Data\TLiner.Data.csproj", "{4CE03942-E1E5-4571-B5F6-5F24A769A08E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLiner.Data", "TLiner.Data\TLiner.Data.csproj", "{4CE03942-E1E5-4571-B5F6-5F24A769A08E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLiner.Services", "TLiner.Services\TLiner.Services.csproj", "{B7B997F7-0E22-4472-9C0C-6AA1E0BDC22D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLiner.Services", "TLiner.Services\TLiner.Services.csproj", "{B7B997F7-0E22-4472-9C0C-6AA1E0BDC22D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLiner.Tests", "TLiner.Tests\TLiner.Tests.csproj", "{56B47C0A-135D-44E9-8233-208743CC4258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLiner.Tests", "TLiner.Tests\TLiner.Tests.csproj", "{56B47C0A-135D-44E9-8233-208743CC4258}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA9753B7-D5D6-4A59-81ED-77C562761CD4}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
