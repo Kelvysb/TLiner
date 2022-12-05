@@ -2,5 +2,6 @@
 {
     public interface ITLinerService
     {
+        IAppState? AppState { get; }
     }
 }

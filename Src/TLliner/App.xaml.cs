@@ -1,11 +1,16 @@
-﻿namespace TLliner;
+﻿using TLiner.Domain.Abstractions.Services;
+using TLliner.Pages;
+
+namespace TLliner;
 
 public partial class App : Application
 {
-    public App(MainPage mainPage)
+    private readonly ITLinerService tLinerService;
+
+    public App(ITLinerService tLinerService)
     {
         InitializeComponent();
-
-        MainPage = new AppShell(mainPage);
+        this.tLinerService = tLinerService;
+        MainPage = new NavigationPage(new ProjectSelection(tLinerService));
     }
 }

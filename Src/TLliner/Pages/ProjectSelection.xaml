@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TLliner.Extensions"
+             x:Class="TLliner.Pages.ProjectSelection"
+             Title="{local:Localize ProjectSelection}">
+    <VerticalStackLayout>
+        <HorizontalStackLayout FlowDirection="RightToLeft" Margin="10">
+            <Button x:Name="BtnNewProject" Text="{local:Localize NewProject}" Clicked="BtnNewProject_Clicked" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout FlowDirection="RightToLeft" Margin="10">
+            <SearchBar x:Name="TxtSearch" Placeholder="{local:Localize Search}" MinimumWidthRequest="200" SearchButtonPressed="TxtSearch_Completed" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

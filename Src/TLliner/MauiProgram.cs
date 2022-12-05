@@ -1,5 +1,4 @@
-﻿using TLiner.Domain.Abstractions.Services;
-using TLliner.DependencyInjection;
+﻿using TLliner.DependencyInjection;
 
 namespace TLliner;
 
@@ -9,10 +8,12 @@ public static class MauiProgram
     {
         var builder = MauiApp.CreateBuilder();
 
-        builder.Services.AddConfiguration(FileSystem.Current.AppDataDirectory);
-        builder.Services.AddServices();
-        builder.Services.AddRepositories();
-        builder.Services.AddTransient(s => new MainPage(s.GetService<ITLinerService>()));
+        builder.Services
+            .AddConfiguration(FileSystem.Current.AppDataDirectory)
+            .AddServices()
+            .AddRepositories()
+            .AddLocalization()
+            .AddLogging();
 
         builder
             .UseMauiApp<App>()

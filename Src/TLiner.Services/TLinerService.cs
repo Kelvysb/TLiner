@@ -4,14 +4,22 @@ namespace TLiner.Services
 {
     public class TLinerService : ITLinerService
     {
-        private readonly IAppState appState;
+        private readonly IAppState? appState;
+
         private readonly IAttributeModelService? attributeModelService;
+
         private readonly IAttributeService? attributeService;
+
         private readonly IEntityModelService? entityModelService;
+
         private readonly IEntityService? entityService;
+
         private readonly IProjectService? projectService;
+
         private readonly IRelationModelService? relationModelService;
+
         private readonly IRelationService? relationService;
+
         private readonly ITimeUnitModelService? timeUnitModelService;
 
         public TLinerService(IAppState appState, IServiceAggregator serviceAggregator)
@@ -26,5 +34,7 @@ namespace TLiner.Services
             relationService = serviceAggregator.RelationService;
             timeUnitModelService = serviceAggregator.TimeUnitModelService;
         }
+
+        public IAppState? AppState => appState;
     }
 }
